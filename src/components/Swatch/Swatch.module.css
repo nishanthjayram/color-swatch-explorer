@@ -1,0 +1,24 @@
+.swatchWrapper {
+  width: 150px;
+  text-align: center;
+}
+
+.swatchColor {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 8px auto;
+}
+
+.swatchInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  margin-bottom: 4px;
+}
+
+.rgb {
+  font-family: monospace;
+}
