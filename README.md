@@ -6,10 +6,9 @@ A React web app which displays a responsive grid of color swatches based on user
 
 1. Clone the repository.
 2. Install dependencies:
-
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 3. Start the development server:
    ```bash
@@ -35,4 +34,4 @@ The UI is built with a component hierarchy separating concerns as follows:
 - `Grid` handles the responsive layout of the color swatches
 - `Swatch` focuses on display of individual colors and associated metadata
 
-In terms of inputs, the user is able to interact with saturation/lightness sliders, which they can drag and release to generate and view swatches for different $(S, L)$ pairs. The decision to omit a button was partly to avoid complexity, but also because the caching functionality means that the cost of switching from one $(S, L)$ configuration to another is amortized efficient.
+The user can specify a given saturation/lightness configuration by interacting with the sliders, which they can drag and release to generate and view swatches for different $(S, L)$ pairs. A loading progress indicator is also provided, which is updated every time a new color name is discovered, and which is expressed as a percentage out of the 360 total hues.
